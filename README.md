@@ -14,6 +14,8 @@ Incremental construction: This algorithm constructs a ball tree incrementally, b
 
 These algorithms have different trade-offs in terms of computational complexity, accuracy, and robustness to different data distributions. The choice of algorithm depends on the specific application and the characteristics of the dataset.
 
+Note that in these implementations, the sklearn.neighbors.BallTree class is used, which provides an efficient implementation of the ball tree data structure. The algorithms differ in the way they construct the tree using this class, by varying the input data, tree parameters, and query parameters. The leaf size parameter determines the maximum number of points in a leaf node of the tree, which affects the balance and depth of the tree. The choice of algorithm and parameters depends on the specific application and the characteristics of the data.
+
 
 
 
